@@ -1,4 +1,5 @@
-FROM python:3.10.8-slim
+# Use the Bookworm-based slim image
+FROM python:3.10-slim-bookworm
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
